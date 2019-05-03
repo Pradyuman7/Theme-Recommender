@@ -1,0 +1,32 @@
+<html>
+
+<h1>How good does this theme look?</h1>
+<div class="editor-wrapper">
+    <span class="color-1">import</span> React <span class="color-1">from</span> <span class="color-2">"react"</span><br/>
+    <span class="color-1">import</span> ReactDOM <span class="color-1">from</span> <span class="color-2">"react-dom"</span><br/>
+    <span class="color-1">import {</span> Provider <span class="color-1">} from</span> <span class="color-2">"react-redux"</span><br/>
+    <br/>
+    <span class="color-1">import</span> Layout <span class="color-1">from</span> <span class="color-2">"./components/Layout"</span><br/>
+    <span class="color-1">import</span> store <span class="color-1">from</span> <span class="color-2">"./store"</span><br/>
+    <br/>
+    <span class="color-1">const</span> app<span class="color-1"> = </span>document.<span class="color-3">getElementById</span><span class="color-1">(</span><span class="color-2">'app'</span><span class="color-1">)</span><br/>
+    <br/>
+    ReactDOM.render<span class="color-1">(</span>&lt;<span class="color-3">Provider store={</span>store<span class="color-3">}</span>&gt;<br/>
+    &nbsp;&nbsp;&lt;<span class="color-3">Layout </span>/&gt;<br/>
+    &lt;/<span class="color-3">Provider</span>&gt;, app<span class="color-1">)</span>
+  </div>
+  <hr/>
+  <button class="star" id="star1">★</button>
+  <button class="star" id="star2">★</button>
+  <button class="star" id="star3">★</button>
+  <button class="star" id="star4">★</button>
+  <button class="star" id="star5">★</button>
+  <hr/>
+  <h4>
+    Rate color combinations to get machine-learning-recommended themes below.<br/>
+    Keep rating and the recommendations will keep getting better!<br/>
+    (it often takes at least 20 ratings to get good recommendations)
+  </h4>
+  <div id="themes"></div>
+
+</html>
