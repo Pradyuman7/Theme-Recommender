@@ -113,41 +113,41 @@ function predictThemeCombinations() {
   })
 
   // keep the top 20 results after sorting
-//   for (let i = 0; i < 20; i++) {
-//     addNewTheme(sortedResults[i])
-//   }
-// }
+  for (let i = 0; i < 20; i++) {
+    addNewTheme(sortedResults[i])
+  }
+}
 
 
 
-// // functions and methods I used above
+// functions and methods I used above
 
-// function addNewTheme({back, one, two, three, score}) {
-//   const newTheme = document.createElement("div")
-//   newTheme.classList.add("predicted-theme")
-//   newTheme.innerHTML = `
-//   <div class="editor-wrapper" style="background:rgb(${back.r}, ${back.g}, ${back.b})">
-//     <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> React <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"react"</span><br/>
-//     <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> ReactDOM <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"react-dom"</span><br/>
-//     <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import {</span> Provider <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">} from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"react-redux"</span><br/>
-//     <br/>
-//     <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> Layout <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"./components/Layout"</span><br/>
-//     <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> store <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"./store"</span><br/>
-//     <br/>
-//     <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">const</span> app<span style="color:rgb(${one.r}, ${one.g}, ${one.b})"> = </span>document.<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">getElementById</span><span style="color:rgb(${one.r}, ${one.g}, ${one.b})">(</span><span style="color: rgb(${two.r}, ${two.g}, ${two.b})">'app'</span><span style="color:rgb(${one.r}, ${one.g}, ${one.b})">)</span><br/>
-//     <br/>
-//     ReactDOM.render<span style="color:rgb(${one.r}, ${one.g}, ${one.b})">(</span>&lt;<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">Provider store={</span>store<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">}</span>&gt;<br/>
-//     &nbsp;&nbsp;&lt;<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">Layout </span>/&gt;<br/>
-//     &lt;/<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">Provider</span>&gt;, app<span style="color:rgb(${one.r}, ${one.g}, ${one.b})"">)</span>
-//   </div>
-//   <li>Score ${score}</li>
-//   <li>Background rgb(${back.r}, ${back.g}, ${back.b})</li>
-//   <li>Color 1 rgb(${one.r}, ${one.g}, ${one.b})</li>
-//   <li>Color 2 rgb(${two.r}, ${two.g}, ${two.b})</li>
-//   <li>Color 3 rgb(${three.r}, ${three.g}, ${three.b})</li>
-//   `
-//   themes.appendChild(newTheme)
-// }
+function addNewTheme({back, one, two, three, score}) {
+  const newTheme = document.createElement("div")
+  newTheme.classList.add("predicted-theme")
+  newTheme.innerHTML = `
+  <div class="editor-wrapper" style="background:rgb(${back.r}, ${back.g}, ${back.b})">
+    <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> React <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"react"</span><br/>
+    <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> ReactDOM <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"react-dom"</span><br/>
+    <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import {</span> Provider <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">} from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"react-redux"</span><br/>
+    <br/>
+    <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> Layout <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"./components/Layout"</span><br/>
+    <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">import</span> store <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">from</span> <span style="color: rgb(${two.r}, ${two.g}, ${two.b})">"./store"</span><br/>
+    <br/>
+    <span style="color:rgb(${one.r}, ${one.g}, ${one.b})">const</span> app<span style="color:rgb(${one.r}, ${one.g}, ${one.b})"> = </span>document.<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">getElementById</span><span style="color:rgb(${one.r}, ${one.g}, ${one.b})">(</span><span style="color: rgb(${two.r}, ${two.g}, ${two.b})">'app'</span><span style="color:rgb(${one.r}, ${one.g}, ${one.b})">)</span><br/>
+    <br/>
+    ReactDOM.render<span style="color:rgb(${one.r}, ${one.g}, ${one.b})">(</span>&lt;<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">Provider store={</span>store<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">}</span>&gt;<br/>
+    &nbsp;&nbsp;&lt;<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">Layout </span>/&gt;<br/>
+    &lt;/<span style="color: rgb(${three.r}, ${three.g}, ${three.b})">Provider</span>&gt;, app<span style="color:rgb(${one.r}, ${one.g}, ${one.b})"">)</span>
+  </div>
+  <li>Score ${score}</li>
+  <li>Background rgb(${back.r}, ${back.g}, ${back.b})</li>
+  <li>Color 1 rgb(${one.r}, ${one.g}, ${one.b})</li>
+  <li>Color 2 rgb(${two.r}, ${two.g}, ${two.b})</li>
+  <li>Color 3 rgb(${three.r}, ${three.g}, ${three.b})</li>
+  `
+  themes.appendChild(newTheme)
+}
 
 function setStars(whichStar) {
   for (let i = 0; i < stars.length; i++) {
