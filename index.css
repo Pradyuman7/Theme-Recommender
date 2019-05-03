@@ -1,0 +1,58 @@
+body {
+  background: #222;
+  color: white;
+  font-family: helvetica neue;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3 {
+  font-weight: 200;
+}
+h4 {
+  color: #ccc;
+  font-weight: 400;
+}
+hr {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  border: 0;
+  height: 1px;
+}
+.predicted-theme {
+  background: black;
+  border:  1px solid white;
+  border-radius:  20px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 457px;
+}
+.editor-wrapper {
+  background: #333;
+  display: inline-block;
+  font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Inconsolata", 'Courier New', monospace;
+  font-size: 10pt;
+  font-weight: normal;
+  padding: 8px;
+  text-align: left;
+  width: 400px;
+}
+.star {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 18pt;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+.star.gold {
+  color: goldenrod;
+}
+li {
+  color: #6f6f6f;
+  list-style-type: none;
+  font-size: 10pt;
+  font-weight: 400;
+}
